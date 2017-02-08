@@ -1,19 +1,16 @@
 package com.project.drinks;
 
-import com.project.IngredientNames;
-import com.project.ingredients.Ingredient;
-
-import java.util.HashMap;
+import com.project.Ingredient;
 
 /**
- * Created by ummehunn on 2/4/2017.
+ * The Decaf Coffee drink is made of 3 units of decaf coffee, 1 unit sugar and 1 unit cream.
  */
 public class DecafCoffee extends Drink{
-    public DecafCoffee(HashMap<IngredientNames, Ingredient> ingredientHashMap) {
+    public DecafCoffee() {
         this.name = "Decaf Coffee";
-        this.ingredientMeasurements.put(ingredientHashMap.get(IngredientNames.DecafCoffee), 3);
-        this.ingredientMeasurements.put(ingredientHashMap.get(IngredientNames.Sugar),1);
-        this.ingredientMeasurements.put(ingredientHashMap.get(IngredientNames.Cream),1);
+        this.ingredientMeasurements.put(Ingredient.DecafCoffee, 3);
+        this.ingredientMeasurements.put(Ingredient.Sugar,1);
+        this.ingredientMeasurements.put(Ingredient.Cream, 1);
     }
 
 

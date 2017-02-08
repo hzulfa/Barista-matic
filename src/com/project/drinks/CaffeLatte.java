@@ -1,17 +1,14 @@
 package com.project.drinks;
 
-import com.project.IngredientNames;
-import com.project.ingredients.Ingredient;
-
-import java.util.HashMap;
+import com.project.Ingredient;
 
 /**
- * Created by ummehunn on 2/4/2017.
+ * The Caffe Latte drink is made of 2 unit espresso and  1 unit steamed milk.
  */
 public class CaffeLatte extends Drink {
-    public CaffeLatte(HashMap<IngredientNames, Ingredient> ingredientHashMap) {
+    public CaffeLatte() {
         this.name = "Caffe Latte";
-        this.ingredientMeasurements.put(ingredientHashMap.get(IngredientNames.Espresso), 2);
-        this.ingredientMeasurements.put(ingredientHashMap.get(IngredientNames.SteamedMilk),1);
+        this.ingredientMeasurements.put(Ingredient.Espresso, 2);
+        this.ingredientMeasurements.put(Ingredient.SteamedMilk,1);
     }
 }

@@ -1,19 +1,16 @@
 package com.project.drinks;
 
-import com.project.IngredientNames;
-import com.project.ingredients.*;
-
-import java.util.HashMap;
+import com.project.Ingredient;
 
 /**
- * Created by ummehunn on 2/4/2017.
+ * The Caffe Mocha drink is made of 1 unit espresso, 1 unit of cocoa, 1 unit steamed milk and 1 unit whipped cream.
  */
 public class CaffeMocha extends Drink{
-    public CaffeMocha(HashMap<IngredientNames, Ingredient> ingredientHashMap) {
+    public CaffeMocha() {
         this.name = "Caffe Mocha";
-        this.ingredientMeasurements.put(ingredientHashMap.get(IngredientNames.Espresso), 1);
-        this.ingredientMeasurements.put(ingredientHashMap.get(IngredientNames.Cocoa), 1);
-        this.ingredientMeasurements.put(ingredientHashMap.get(IngredientNames.SteamedMilk), 1);
-        this.ingredientMeasurements.put(ingredientHashMap.get(IngredientNames.WhippedCream), 1);
+        this.ingredientMeasurements.put(Ingredient.Espresso, 1);
+        this.ingredientMeasurements.put(Ingredient.Cocoa, 1);
+        this.ingredientMeasurements.put(Ingredient.SteamedMilk, 1);
+        this.ingredientMeasurements.put(Ingredient.WhippedCream, 1);
     }
 }

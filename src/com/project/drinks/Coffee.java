@@ -1,18 +1,15 @@
 package com.project.drinks;
 
-import com.project.IngredientNames;
-import com.project.ingredients.Ingredient;
-
-import java.util.HashMap;
+import com.project.Ingredient;
 
 /**
- * Created by ummehunn on 2/4/2017.
+ * The Coffee drink is made of 3 units of coffee, 1 unit sugar and 1 unit cream.
  */
 public class Coffee extends Drink {
-    public Coffee(HashMap<IngredientNames, Ingredient> ingredientHashMap) {
+    public Coffee() {
         this.name = "Coffee";
-        this.ingredientMeasurements.put(ingredientHashMap.get(IngredientNames.Coffee), 3);
-        this.ingredientMeasurements.put(ingredientHashMap.get(IngredientNames.Sugar),1);
-        this.ingredientMeasurements.put(ingredientHashMap.get(IngredientNames.Cream),1);
+        this.ingredientMeasurements.put(Ingredient.Coffee, 3);
+        this.ingredientMeasurements.put(Ingredient.Sugar,1);
+        this.ingredientMeasurements.put(Ingredient.Cream,1);
     }
 }

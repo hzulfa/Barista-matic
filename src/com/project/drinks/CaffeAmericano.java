@@ -1,16 +1,13 @@
 package com.project.drinks;
 
-import com.project.IngredientNames;
-import com.project.ingredients.Ingredient;
-
-import java.util.HashMap;
+import com.project.Ingredient;
 
 /**
- * Created by ummehunn on 2/4/2017.
+ * The Caffe Americano drink is made of 3 unit espresso.
  */
 public class CaffeAmericano extends Drink{
-    public CaffeAmericano(HashMap<IngredientNames, Ingredient> ingredientHashMap) {
+    public CaffeAmericano() {
         this.name = "Caffe Americano";
-        this.ingredientMeasurements.put(ingredientHashMap.get(IngredientNames.Espresso), 3);
+        this.ingredientMeasurements.put(Ingredient.Espresso, 3);
     }
 }
